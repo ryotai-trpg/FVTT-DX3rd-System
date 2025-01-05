@@ -1,7 +1,7 @@
 {
   "DX3rd.HP": "HP",
-  "DX3rd.Encroachment": "侵食率",
-  "DX3rd.EncroachmentInit": "初期浸食率",
+  "DX3rd.Encroachment": "侵蝕率",
+  "DX3rd.EncroachmentInit": "初期侵蝕率",
   "DX3rd.Works": "ワークス",
   "DX3rd.Syndrome": "シンドローム",
   "DX3rd.CharName": "キャラクター名",
@@ -59,7 +59,7 @@
   "DX3rd.Add": "修正値",
   "DX3rd.Base": "能力値",
 
-  "DX3rd.Cover": "カバー",
+  "DX3rd.Cover": "カヴァー",
   "DX3rd.Ancestry": "出自",
   "DX3rd.Experience": "経験",
   "DX3rd.Meet": "邂逅",
@@ -74,7 +74,7 @@
   "DX3rd.Timing": "タイミング",
   "DX3rd.Range": "射程",
   "DX3rd.Target": "対象",
-  "DX3rd.Encroach": "侵食値",
+  "DX3rd.Encroach": "侵蝕値",
 
   "DX3rd.Text": "効果参考",
   "DX3rd.Minor": "マイナー",
@@ -82,7 +82,7 @@
   "DX3rd.Reaction": "リアクション",
   "DX3rd.Auto": "オートアクション",
   "DX3rd.Setup": "セットアップ",
-  "DX3rd.Cleanup": "クリーンアップ",
+  "DX3rd.Cleanup": "クリンナップ",
   "DX3rd.Initiative": "イニシアチブ",
   "DX3rd.Always": "常時",
   "DX3rd.Easy": "イージー",
@@ -215,9 +215,9 @@
   "DX3rd.ReduceDamage": "ダメージ減少",
   "DX3rd.Covering2": "2人をカバーリング",
 
-  "DX3rd.EncroachmentCore": "侵食率(基本)",
-  "DX3rd.EncroachmentEA": "侵食率(EA)",
-  "DX3rd.EncroachmentOrigin": "侵食率(起源種)",
+  "DX3rd.EncroachmentCore": "侵蝕率(基本)",
+  "DX3rd.EncroachmentEA": "侵蝕率(EA)",
+  "DX3rd.EncroachmentOrigin": "侵蝕率(起源種)",
   "DX3rd.BackTrack": "バックトラック",
   "DX3rd.BackTrackBtn": "ﾊﾞｯｸﾄﾗｯｸ",
   "DX3rd.EXPx2": "2倍振り",
@@ -237,5 +237,60 @@
   "DX3rd.SubAction7": "その他",
   "DX3rd.SubAction8": "ダメージロールのダイスを+5個する",
   "DX3rd.SubAction9": "戦闘不能から完全回復",
-  "DX3rd.SubAction0": "エフェクトの使用回数回復"
+  "DX3rd.SubAction0": "エフェクトの使用回数回復",
+
+  "DX3rd.Condition": "バッドステータス",
+  "DX3rd.Apply": "適用",
+  "DX3rd.Clear": "解除",
+
+  "DX3rd.Riger": "[硬直]",
+  "DX3rd.Pressure": "[重圧]",
+  "DX3rd.Dazed": "[放心]",
+  "DX3rd.Tainted": "[邪毒]",
+  "DX3rd.Hatred": "[憎悪]",
+  "DX3rd.Fear": "[恐怖]",
+  "DX3rd.Berserk": "[暴走]",
+
+  "DX3rd.Normal": "通常",
+
+  "DX3rd.Mutation": "変異暴走",
+  "DX3rd.UrgeRelease": "解放",
+  "DX3rd.UrgeHunger": "飢餓",
+  "DX3rd.UrgeBloodsucking": "吸血",
+  "DX3rd.UrgeSlaughter": "殺戮",
+  "DX3rd.UrgeDestruction": "破壊",
+  "DX3rd.UrgeTourture": "加虐",
+  "DX3rd.UrgeDistaste": "嫌悪",
+  "DX3rd.UrgeBattlelust": "闘争",
+  "DX3rd.UrgeDelusion": "妄想",
+  "DX3rd.UrgeSelfmutilation": "自傷",
+  "DX3rd.UrgeFear": "恐怖",
+  "DX3rd.UrgeHatred": "憎悪",
+
+  "DX3rd.Fly": "【飛行】",
+  "DX3rd.Stealth": "【隠密】",
+  "DX3rd.Boarding": "【搭乗】",
+
+  "DX3rd.Defeated": "戦闘不能",
+  "DX3rd.ActionEnd": "行動済み",
+  "DX3rd.ActionDelay": "待機",
+
+  "DX3rd.LostHP": "HP減少",
+  "DX3rd.TaintedDamage": "邪毒ダメージ",
+  "DX3rd.Healing": "回復",
+
+  "DX3rd.StealthCharacter": "隠密状態のキャラクター",
+  "DX3rd.StealthTargetCheck": "隠密状態の確認",
+
+  "DX3rd.CombatStart": "戦闘開始",
+  "DX3rd.CombatEnd": "戦闘終了",
+  "DX3rd.Round": "ラウンド",
+  "DX3rd.InitiativeCharacter": "イニシアチブキャラクター",
+  "DX3rd.MainCharacter": "メインキャラクター",
+  "DX3rd.Null": "なし",
+  "DX3rd.Main": "メイン",
+  "DX3rd.Process": "プロセス",
+  "DX3rd.MainStart": "メインプロセス開始",
+  "DX3rd.CleanupStart": "クリンナッププロセス開始",
+  "DX3rd.ReCheck": "再確認"
 }
