@@ -4,10 +4,9 @@
   "description": "Double Cross 3rd",
   "version": "1.6.2",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.315"
+    "minimum": 12,
+    "verified": "12.343"
   },
-  "templateVersion": 6,
   "authors": [
     {
       "name": "ltaeng",
@@ -35,8 +34,10 @@
         {"lang": "ja", "name": "日本語", "path": "lang/ja.json"},
         {"lang": "en", "name": "English", "path": "lang/en.json"}
   ],
-  "gridDistance": 1,
-  "gridUnits": "m",
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
   "socket": true,
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.encroachment",
