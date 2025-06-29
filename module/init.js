@@ -126,7 +126,7 @@ Hooks.once("init", async function () {
   console.log(`Initializing Double Cross 3rd System`);
 
   game.DX3rd = {
-    baseSkills: game.system.model.Actor.character.attributes.skills,
+    baseSkills: game.model.Actor.character.attributes.skills,
     itemUsage: {},
     DamageDialog: [],
   };
