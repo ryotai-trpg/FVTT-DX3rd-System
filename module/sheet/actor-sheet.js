@@ -2,7 +2,7 @@
 import { ComboDialog } from "../dialog/combo-dialog.js";
 import { DX3rdSkillDialog } from "../dialog/skill-dialog.js";
 
-export class DX3rdActorSheet extends ActorSheet {
+export class DX3rdActorSheet extends foundry.appv1.sheets.ActorSheet {
 
   /** @override */
   static get defaultOptions() {

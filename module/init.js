@@ -132,39 +132,39 @@ Hooks.once("init", async function () {
   };
 
   // Register sheet application classes
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("dx3rd", DX3rdActorSheet, { makeDefault: true });
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("dx3rd", DX3rdWorksSheet, {
+  foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
+  foundry.documents.collections.Actors.registerSheet("dx3rd", DX3rdActorSheet, { makeDefault: true });
+  foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdWorksSheet, {
     types: ["works"],
     makeDefault: true,
   });
-  Items.registerSheet("dx3rd", DX3rdEffectSheet, {
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdEffectSheet, {
     types: ["effect"],
     makeDefault: true,
   });
-  Items.registerSheet("dx3rd", DX3rdComboSheet, {
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdComboSheet, {
     types: ["combo"],
     makeDefault: true,
   });
-  Items.registerSheet("dx3rd", DX3rdEffectSheet, {
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdEffectSheet, {
     types: ["spell"],
     makeDefault: true,
   });
-  Items.registerSheet("dx3rd", DX3rdEffectSheet, {
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdEffectSheet, {
     types: ["psionic"],
     makeDefault: true,
   });
-  Items.registerSheet("dx3rd", DX3rdRoisSheet, {
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdRoisSheet, {
     types: ["rois"],
     makeDefault: true,
   });
 
-  Items.registerSheet("dx3rd", DX3rdEquipmentSheet, {
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdEquipmentSheet, {
     types: ["weapon", "protect", "vehicle", "connection", "item"],
     makeDefault: true,
   });
-  Items.registerSheet("dx3rd", DX3rdItemSheet, { makeDefault: false });
+  foundry.documents.collections.Items.registerSheet("dx3rd", DX3rdItemSheet, { makeDefault: false });
 
   CONFIG.Actor.documentClass = DX3rdActor;
   CONFIG.Item.documentClass = DX3rdItem;
