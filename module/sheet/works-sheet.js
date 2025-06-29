@@ -7,9 +7,9 @@ export class DX3rdWorksSheet extends DX3rdItemSheet {
     let data = await super.getData(options);
 
     if (this.actor != null)
-      data.system.actorSkills = duplicate(this.actor.system.attributes.skills);
+      data.system.actorSkills = foundry.utils.duplicate(this.actor.system.attributes.skills);
     else
-      data.system.actorSkills = duplicate(game.DX3rd.baseSkills);
+      data.system.actorSkills = foundry.utils.duplicate(game.DX3rd.baseSkills);
 
     return data;
   }

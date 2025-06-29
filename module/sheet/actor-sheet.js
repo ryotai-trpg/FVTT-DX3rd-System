@@ -406,7 +406,7 @@ export class DX3rdActorSheet extends ActorSheet {
     event.preventDefault();
     const header = event.currentTarget;
     const type = header.dataset.type;
-    const data = duplicate(header.dataset);
+    const data = foundry.utils.duplicate(header.dataset);
     delete data["type"];
 
     if (type == 'effect')

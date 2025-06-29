@@ -114,7 +114,7 @@ export class DefenseDialog extends Dialog {
   }
 
   calcDefenseDamage(def) {
-    let defense = duplicate(def);
+    let defense = foundry.utils.duplicate(def);
     let actorData = this.actor.system;
 
     if (this.damageData.data.ignoreArmor)

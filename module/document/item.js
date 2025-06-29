@@ -457,7 +457,7 @@ export class DX3rdItem extends Item {
     let attributes = this.system.effect.attributes;
     let level = ("level" in this.system) ? this.system.level.value : 0;
 
-    let copy = duplicate(attributes);
+    let copy = foundry.utils.duplicate(attributes);
     for (const [key, value] of Object.entries(attributes)) {
       if (key == '-' || key == 'critical_min')
         continue;

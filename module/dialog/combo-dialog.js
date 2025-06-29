@@ -53,7 +53,7 @@ export class ComboDialog extends Dialog {
 
   /** @override */
   getData() {
-    let actorSkills = duplicate(this.actor.system.attributes.skills);
+    let actorSkills = foundry.utils.duplicate(this.actor.system.attributes.skills);
     let effectList = [];
 
     for (let i of this.actor.items) {
