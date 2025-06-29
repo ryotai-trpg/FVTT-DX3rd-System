@@ -4,8 +4,8 @@
   "description": "Double Cross 3rd",
   "version": "1.6.2",
   "compatibility": {
-    "minimum": 12,
-    "verified": "12.343"
+    "minimum": 13,
+    "verified": "12.346"
   },
   "authors": [
     {
