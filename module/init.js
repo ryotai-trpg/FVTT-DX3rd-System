@@ -257,7 +257,6 @@ Hooks.on("updateActorCost", async (actor, key, usage) => {
           ${rollData}
         </div>
       `;
-      chatData.type = CONST.CHAT_MESSAGE_TYPES.ROLL;
       chatData.sound = CONFIG.sounds.dice;
       chatData.roll = roll;
     }
@@ -348,7 +347,7 @@ async function createItemMacro(dropData, slot) {
   } else {
     macro = await Macro.implementation.create({
       name: doc.name,
-      type: CONST.MACRO_TYPES.SCRIPT,
+      type: CONST.MACRO_STYLES.SCRIPT,
       img: doc.img,
       command: `let item = await fromUuid("${dropData.uuid}");\nitem.toMessage();`,
     });
@@ -411,7 +410,7 @@ async function chatListeners(html) {
     await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       content: message,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 
@@ -850,7 +849,6 @@ async function chatListeners(html) {
           ${rollData}
         </div>
       `;
-      chatData.type = CONST.CHAT_MESSAGE_TYPES.ROLL;
       chatData.sound = CONFIG.sounds.dice;
       chatData.roll = roll;
       
@@ -1141,7 +1139,6 @@ async function chatListeners(html) {
             ChatMessage.create(
               {
                 content: content,
-                type: CONST.CHAT_MESSAGE_TYPES.ROLL,
                 sound: CONFIG.sounds.dice,
                 roll: roll,
               },
@@ -1289,7 +1286,6 @@ Hooks.on("enterScene", (actor) => {
             {
               speaker: ChatMessage.getSpeaker({ actor: actor }),
               content: content + `</div>`,
-              type: CONST.CHAT_MESSAGE_TYPES.ROLL,
               sound: CONFIG.sounds.dice,
               roll: roll,
             },
@@ -1375,7 +1371,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
                 ChatMessage.create({
                   speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                   content: content,
-                  type: CONST.CHAT_MESSAGE_TYPES.IC,
+                  type: CONST.CHAT_MESSAGE_STYLES.IC,
                 });
 
               } 
@@ -1395,7 +1391,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
                 ChatMessage.create({
                   speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                   content: content,
-                  type: CONST.CHAT_MESSAGE_TYPES.IC,
+                  type: CONST.CHAT_MESSAGE_STYLES.IC,
                 });
 
                 const token = actor.getActiveTokens()[0] || null;
@@ -1423,7 +1419,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
                 ChatMessage.create({
                   speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                   content: content,
-                  type: CONST.CHAT_MESSAGE_TYPES.IC,
+                  type: CONST.CHAT_MESSAGE_STYLES.IC,
                 });
               }              
               else {
@@ -1442,7 +1438,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
                 ChatMessage.create({
                   speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                   content: content,
-                  type: CONST.CHAT_MESSAGE_TYPES.IC,
+                  type: CONST.CHAT_MESSAGE_STYLES.IC,
                 });
               }
             }
@@ -1485,7 +1481,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
                 ChatMessage.create({
                   speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                   content: content,
-                  type: CONST.CHAT_MESSAGE_TYPES.IC,
+                  type: CONST.CHAT_MESSAGE_STYLES.IC,
                 });
             }
           },
@@ -1540,7 +1536,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
               ChatMessage.create({
                 speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                 content: content,
-                type: CONST.CHAT_MESSAGE_TYPES.IC,
+                type: CONST.CHAT_MESSAGE_STYLES.IC,
               });
             }
           },
@@ -1595,7 +1591,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
               ChatMessage.create({
                 speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
                 content: content,
-                type: CONST.CHAT_MESSAGE_TYPES.IC,
+                type: CONST.CHAT_MESSAGE_STYLES.IC,
               });
             }
           },
@@ -1626,7 +1622,7 @@ Hooks.on("createActiveEffect", async (effect, options, userId) => {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
       content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 });
@@ -1657,7 +1653,7 @@ Hooks.on("deleteActiveEffect", async (effect) => {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
       content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 
@@ -1683,7 +1679,7 @@ Hooks.on("deleteActiveEffect", async (effect) => {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
       content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 
@@ -1709,7 +1705,7 @@ Hooks.on("deleteActiveEffect", async (effect) => {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
       content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 
@@ -1735,7 +1731,7 @@ Hooks.on("deleteActiveEffect", async (effect) => {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
       content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 
@@ -1761,7 +1757,7 @@ Hooks.on("deleteActiveEffect", async (effect) => {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ alias: "GM" }), // GM으로 설정
       content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.IC,
+      type: CONST.CHAT_MESSAGE_STYLES.IC,
     });
   }
 });

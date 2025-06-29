@@ -1038,7 +1038,6 @@ export class DX3rdActor extends Actor {
       {
         speaker: ChatMessage.getSpeaker({ actor: this }),
         content: content,
-        type: CONST.CHAT_MESSAGE_TYPES.ROLL,
         sound: CONFIG.sounds.dice,
         roll: roll,
       },
@@ -1466,7 +1465,6 @@ export class DX3rdActor extends Actor {
       ChatMessage.create(
         {
           content: content,
-          type: CONST.CHAT_MESSAGE_TYPES.ROLL,
           sound: CONFIG.sounds.dice,
           roll: roll,
         },

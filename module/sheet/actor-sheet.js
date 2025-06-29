@@ -551,7 +551,6 @@ export class DX3rdActorSheet extends ActorSheet {
             ChatMessage.create({
               speaker: ChatMessage.getSpeaker({actor: this.actor}),
               content: content + `</div>`,
-              type: CONST.CHAT_MESSAGE_TYPES.ROLL,
               sound: CONFIG.sounds.dice,
               roll: roll,
             }, {rollMode});
@@ -595,7 +594,6 @@ export class DX3rdActorSheet extends ActorSheet {
             ChatMessage.create({
               speaker: ChatMessage.getSpeaker({actor: this.actor}),
               content: content + `</div>`,
-              type: CONST.CHAT_MESSAGE_TYPES.ROLL,
               sound: CONFIG.sounds.dice,
               roll: roll,
             }, {rollMode});
@@ -635,7 +633,6 @@ export class DX3rdActorSheet extends ActorSheet {
             ChatMessage.create({
               speaker: ChatMessage.getSpeaker({actor: this.actor}),
               content: content + `</div>`,
-              type: CONST.CHAT_MESSAGE_TYPES.ROLL,
               sound: CONFIG.sounds.dice,
               roll: roll,
             }, {rollMode});
@@ -687,7 +684,6 @@ export class DX3rdActorSheet extends ActorSheet {
               ChatMessage.create({
                 speaker: ChatMessage.getSpeaker({actor: this.actor}),
                 content: content + `</div>`,
-                type: CONST.CHAT_MESSAGE_TYPES.ROLL,
                 sound: CONFIG.sounds.dice,
                 roll: roll,
               }, {rollMode});
@@ -738,7 +734,6 @@ export class DX3rdActorSheet extends ActorSheet {
               ChatMessage.create({
                 speaker: ChatMessage.getSpeaker({actor: this.actor}),
                 content: content + `</div>`,
-                type: CONST.CHAT_MESSAGE_TYPES.ROLL,
                 sound: CONFIG.sounds.dice,
                 roll: roll,
               }, {rollMode});
