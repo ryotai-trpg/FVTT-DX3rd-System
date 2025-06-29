@@ -218,7 +218,9 @@ Hooks.once("init", async function () {
 });
 
 Hooks.once("ready", async function () {
-  game.settings.set("core", "defaultToken", { disposition: 0 });
+  game.settings.set("core", "prototypeTokenOverrides", 
+    { character: { disposition: 0 } }
+  );
 });
 
 Hooks.on("setActorCost", (actor, key, type, cost) => {
