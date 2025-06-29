@@ -42,7 +42,7 @@ export class DX3rdSkillDialog extends Dialog {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       template: "systems/dx3rd/templates/dialog/skill-dialog.html",
       classes: ["dx3rd", "dialog"],
       width: 500

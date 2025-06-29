@@ -6,7 +6,7 @@ export class DX3rdActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["dx3rd", "sheet", "actor"],
       template: "systems/dx3rd/templates/sheet/actor/actor-sheet.html",
       width: 850,

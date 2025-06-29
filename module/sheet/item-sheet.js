@@ -3,7 +3,7 @@ export class DX3rdItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["dx3rd", "sheet", "item"],
       width: 520,
       height: 480,
