@@ -178,7 +178,7 @@ Hooks.once("init", async function () {
   CONFIG.Combat.initiative.formula = "@attributes.init.value";
 
   Roll.TOOLTIP_TEMPLATE = "systems/dx3rd/templates/dice/tooltip.html";
-  DiceTerm.fromMatch = (match) => {
+  foundry.dice.terms.DiceTerm.fromMatch = (match) => {
     let [number, denomination, modifiers, flavor] = match.slice(1);
 
     // Get the denomination of DiceTerm
@@ -187,7 +187,7 @@ Hooks.once("init", async function () {
       denomination in CONFIG.Dice.terms
         ? CONFIG.Dice.terms[denomination]
         : CONFIG.Dice.terms.d;
-    if (!getParentClasses(cls).includes(DiceTerm)) {
+    if (!getParentClasses(cls).includes(foundry.dice.terms.DiceTerm)) {
       throw new Error(
         `DiceTerm denomination ${denomination} not registered to CONFIG.Dice.terms as a valid DiceTerm class`
       );
@@ -209,7 +209,7 @@ Hooks.once("init", async function () {
 
     // Match modifiers
     modifiers = Array.from(
-      (modifiers || "").matchAll(DiceTerm.MODIFIER_REGEXP)
+      (modifiers || "").matchAll(foundry.dice.terms.DiceTerm.MODIFIER_REGEXP)
     ).map((m) => m[0]);
 
     // Construct a term of the appropriate denomination

@@ -1,5 +1,5 @@
 
-export class DX3rdDiceTerm extends DiceTerm {
+export class DX3rdDiceTerm extends foundry.dice.terms.DiceTerm {
 
     /** @override */
     constructor(termData = []) {
@@ -45,7 +45,7 @@ export class DX3rdDiceTerm extends DiceTerm {
             if (!r.active) continue;
 
             if ( (this.critical !== null) && (this.critical <= 0) ) break;
-            if (DiceTerm.compareResult(r.result, ">=", this.critical)) {
+            if (foundry.dice.terms.DiceTerm.compareResult(r.result, ">=", this.critical)) {
                 r.exploded = true;
                 this.roll();
             }
